@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Huawei</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+            img{
+                width: 300px;
+                display: inline-block;
+            }
+            .btn{
+                font-size: 13.5px;
+            }
+            </style>
+</head>
+<body>
+        <div class="container">
+                <!-- <h2>Modal Example</h2> -->
+                <!-- Trigger the modal with a button -->
+                <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+              
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog" data-keyboard="false" data-backdrop="static">
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" onclick="modalNone()"></button>
+                        <h4 class="modal-title">Huawei</h4>
+                      </div>
+                      <div class="modal-body" id="M_B_html">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="modalNone()">Close</button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+    <h1 class="jumbotron">Huawei</h1>
+    <nav class="navbar navbar-expand-sm bg-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                   <h4>OnLine Mobile Shopping Center</h4>
+                  </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="iPhone.html">iPhone</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nokia.html">Nokia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="qMobile.html">Q Mobile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="samsung.html">Samsung</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="huawei.html">Houwei</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="cart.html">Cart</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="onlineMobileShoppingCenter.html">Log Out</a>
+              </li>
+            </ul>
+          </nav>
+        <div id="cartList"></div>
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2">
+                    <img class="open" src="All_Images/Huawei/Huawei_Honor_7X.jpg" alt="Huawei_Honor_7X" title="Huawei_Honor_7X" data-toggle="modal" data-target="#myModal" onclick="openModal(0)" />
+                    <h4>Price Rs:70,000/-</h4>
+                        <div style="position: relative;" class="row">
+                            <div style="position: absolute; left: 0%; " class="col-sm-6">
+                                <button class="btn btn-succes" onclick="incrementItem(0)">Add Items</button>
+                            </div>
+                            <div style="position: absolute; left:40% " class="col-sm-6">
+                                <button class="btn btn-danger" onclick="decrementItem(0)">Remove Items</button>
+                            </div>
+                        </div>
+                </div>
+    
+                    <div class="col-sm-2">
+                    <img class="open" src="All_Images/Huawei/Huawei_7x.jpg" alt="Huawei_7x" title="Huawei_7x" data-toggle="modal" data-target="#myModal" onclick="openModal(1)" />
+                    <h4>Price Rs:70,000/-</h4>
+                    <div style="position: relative;" class="row">
+                            <div style="position: absolute; left: 0%; " class="col-sm-6">
+                                <button class="btn btn-succes" onclick="incrementItem(1)">Add Items</button>
+                            </div>
+                            <div style="position: absolute; left:40% " class="col-sm-6">
+                                <button class="btn btn-danger" onclick="decrementItem(1)">Remove Items</button>
+                            </div>
+                        </div>           
+                </div>
+                    <div class="col-sm-2">
+                    <img class="open" src="All_Images/Huawei/Huawei_Honor_7C.jpg" alt="Huawei_Honor_7C" title="Huawei_Honor_7C" data-toggle="modal" data-target="#myModal" onclick="openModal(2)" />
+                    <h4>Price Rs:70,000/-</h4>
+                    <div style="position: relative;" class="row">
+                            <div style="position: absolute; left: 0%; " class="col-sm-6">
+                                <button class="btn btn-succes" onclick="incrementItem(2)">Add Items</button>
+                            </div>
+                            <div style="position: absolute; left:40% " class="col-sm-6">
+                                <button class="btn btn-danger" onclick="decrementItem(2)">Remove Items</button>
+                            </div>
+                        </div>
+                </div>
+                    <div class="col-sm-2">
+                    <img class="open" src="All_Images/Huawei/Huawei_Nova_Plus.jpg" alt="Huawei_Nova_Plus" title="Huawei_Nova_Plus" data-toggle="modal" data-target="#myModal" onclick="openModal(3)" />
+                    <h4>Price Rs:70,000/-</h4>
+                    <div style="position: relative;" class="row">
+                            <div style="position:absolute;left: 0px"  class="col-sm-6">
+                                <button class="btn btn-succes" onclick="incrementItem(3)">Add Items</button>
+                            </div>
+                            <div style="position: relative;left: 40% " class="col-sm-6">
+                                <button class="btn btn-danger" onclick="decrementItem(3)">Remove Items</button>
+                            </div>
+                        </div>
+                </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2">
+                    <img class="open" src="All_Images/Huawei/Huawei_Y5_2017_Grey..jpg" alt="Huawei_Y5_2017_Grey" title="Huawei_Y5_2017_Grey" data-toggle="modal" data-target="#myModal" onclick="openModal(4)" />
+                    <h4>Price Rs:70,000/-</h4>
+                        <div style="position: relative;" class="row">
+                            <div style="position: absolute; left: 0%; " class="col-sm-6">
+                                <button class="btn btn-succes" onclick="incrementItem(4)">Add Items</button>
+                            </div>
+                            <div style="position: absolute; left:40% " class="col-sm-6">
+                                <button class="btn btn-danger" onclick="decrementItem(4)">Remove Items</button>
+                            </div>
+                        </div>
+                </div>
+    
+                    <div class="col-sm-2">
+                    <img class="open" src="All_Images/Huawei/Huawei_Y6.jpg" alt="Huawei_Y6" title="Huawei_Y6" data-toggle="modal" data-target="#myModal" onclick="openModal(5)" />
+                    <h4>Price Rs:70,000/-</h4>
+                    <div style="position: relative;" class="row">
+                            <div style="position: absolute; left: 0%; " class="col-sm-6">
+                                <button class="btn btn-succes" onclick="incrementItem(5)">Add Items</button>
+                            </div>
+                            <div style="position: absolute; left:40% " class="col-sm-6">
+                                <button class="btn btn-danger" onclick="decrementItem(5)">Remove Items</button>
+                            </div>
+                        </div>           
+                </div>
+                    <div class="col-sm-2">
+                    <img class="open" src="All_Images/Huawei/Huawei_Mate_9.jpg" alt="Huawei_Mate_9" title="Huawei_Mate_9" data-toggle="modal" data-target="#myModal" onclick="openModal(6)" />
+                    <h4>Price Rs:70,000/-</h4>
+                    <div style="position: relative;" class="row">
+                            <div style="position: absolute; left: 0%; " class="col-sm-6">
+                                <button class="btn btn-succes" onclick="incrementItem(6)">Add Items</button>
+                            </div>
+                            <div style="position: absolute; left:40% " class="col-sm-6">
+                                <button class="btn btn-danger" onclick="decrementItem(6)">Remove Items</button>
+                            </div>
+                        </div>
+                </div>
+                    <div class="col-sm-2">
+                    <img class="open" src="All_Images/Huawei/y7_prime2018.jpg" alt="y7_prime2018" title="y7_prime2018" data-toggle="modal" data-target="#myModal" onclick="openModal(7)" />
+                    <h4>Price Rs:70,000/-</h4>
+                    <div style="position: relative;" class="row">
+                            <div style="position:absolute;left: 0px"  class="col-sm-6">
+                                <button class="btn btn-succes" onclick="incrementItem(7)">Add Items</button>
+                            </div>
+                            <div style="position: relative;left: 40% " class="col-sm-6">
+                                <button class="btn btn-danger" onclick="decrementItem(7)">Remove Items</button>
+                            </div>
+                        </div>
+                </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+        <script src="function.js"></script>
+        <script src="huawei.js"></script>
+</body>
+</html>

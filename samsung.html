@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Samsung</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+    img{
+        width: 300px;
+        display: inline-block;
+    }
+     
+    </style>
+</head>
+<body>
+
+        <div class="container">
+                <!-- <h2>Modal Example</h2> -->
+                <!-- Trigger the modal with a button -->
+                <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+              
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog" data-keyboard="false" data-backdrop="static" >
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" onclick="modalNone()"></button>
+                        <h4 class="modal-title">Samsung</h4>
+                      </div>
+                      <div class="modal-body" id="M_B_html">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="modalNone()">Close</button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+                  
+        
+    <h1 class="jumbotron">Samsung</h1>      
+    <nav class="navbar navbar-expand-sm bg-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                   <h4>OnLine Mobile Shopping Center</h4>
+                  </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="iPhone.html">iPhone</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nokia.html">Nokia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="qMobile.html">Q Mobile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="samsung.html">Samsung</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="huawei.html">Houwei</a>
+                </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="cart.html">Cart</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="onlineMobileShoppingCenter.html">Log Out</a>
+              </li>
+            </ul>
+          </nav>
+    <div id="cartList"></div>    
+    <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2">
+                <img src="All_Images/Sumsang/Samsung_Galaxy_S8.jpg" alt="Samsung Samsung Galaxy S8" title="Samsung Galaxy S8" data-toggle="modal" data-target="#myModal" onclick="openModal(0)"/>
+                <h4>Price Rs:80,300/-</h4>
+                    <div style="position: relative;" class="row">
+                        <div style="position: absolute; left: 0%; " class="col-sm-6">
+                            <button class="btn btn-succes" onclick="incrementItem(0)">Add Items</button>
+                        </div>
+                        <div style="position: absolute; left:40% " class="col-sm-6">
+                            <button class="btn btn-danger" onclick="decrementItem(0)">Remove Items</button>
+                        </div>
+                    </div>
+            </div>
+
+                <div class="col-sm-2">
+                <img src="All_Images/Sumsang/Samsung_Grand_Prime_Pro.jpg" alt="Samsung_Grand_Prime_Pro" title="Samsung_Grand_Prime_Pro" data-toggle="modal" data-target="#myModal" onclick="openModal(1)" />
+                <h4>Price Rs:80,300/-</h4>
+                <div style="position: relative;" class="row">
+                        <div style="position: absolute; left: 0%; " class="col-sm-6">
+                            <button class="btn btn-succes" onclick="incrementItem(1)">Add Items</button>
+                        </div>
+                        <div style="position: absolute; left:40% " class="col-sm-6">
+                            <button class="btn btn-danger" onclick="decrementItem(1)">Remove Items</button>
+                        </div>
+                    </div>           
+            </div>
+                <div class="col-sm-2">
+                <img src="All_Images/Sumsang/Samsung_Galaxy_Grand_Prime_Plus.jpg" alt="Samsung_Galaxy_Grand_Prime_Plus" title="Samsung_Galaxy_Grand_Prime_Plus" data-toggle="modal" data-target="#myModal" onclick="openModal(2)" />
+                <h4>Price Rs:80,300/-</h4>
+                <div style="position: relative;" class="row">
+                        <div style="position: absolute; left: 0%; " class="col-sm-6">
+                            <button class="btn btn-succes" onclick="incrementItem(2)">Add Items</button>
+                        </div>
+                        <div style="position: absolute; left:40% " class="col-sm-6">
+                            <button class="btn btn-danger" onclick="decrementItem(2)">Remove Items</button>
+                        </div>
+                    </div>
+            </div>
+                <div class="col-sm-2">
+                <img src="All_Images/Sumsang/Samsung_Galaxy_J.jpg" alt="Samsung_Galaxy_J" title="Samsung_Galaxy_J" data-toggle="modal" data-target="#myModal" onclick="openModal(3)" />
+                <h4>Price Rs:80,300/-</h4>
+                <div style="position: relative;" class="row">
+                        <div style="position:absolute;left: 0px"  class="col-sm-6">
+                            <button class="btn btn-succes" onclick="incrementItem(3)">Add Items</button>
+                        </div>
+                        <div style="position: relative;left: 40% " class="col-sm-6">
+                            <button class="btn btn-danger" onclick="decrementItem(3)">Remove Items</button>
+                        </div>
+                    </div>
+            </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2">
+            <img src="All_Images/Sumsang/Samsung_Galaxy_S9.jpg" alt="Samsung_Galaxy_S9" title="Samsung_Galaxy_S9" data-toggle="modal" data-target="#myModal" onclick="openModal(4)" />
+            <h4>Price Rs:80,300/-</h4>
+                <div style="position: relative;" class="row">
+                    <div style="position: absolute; left: 0%; " class="col-sm-6">
+                        <button class="btn btn-succes" onclick="incrementItem(4)">Add Items</button>
+                    </div>
+                    <div style="position: absolute; left:40% " class="col-sm-6">
+                        <button class="btn btn-danger" onclick="decrementItem(4)">Remove Items</button>
+                    </div>
+                </div>
+        </div>
+
+            <div class="col-sm-2">
+            <img src="All_Images/Sumsang/Samsung_Galaxy_A5.jpg" alt="Samsung_Galaxy_A5" title="Samsung_Galaxy_A5" data-toggle="modal" data-target="#myModal" onclick="openModal(5)" />
+            <h4>Price Rs:80,300/-</h4>
+            <div style="position: relative;" class="row">
+                    <div style="position: absolute; left: 0%; " class="col-sm-6">
+                        <button class="btn btn-succes" onclick="incrementItem(5)">Add Items</button>
+                    </div>
+                    <div style="position: absolute; left:40% " class="col-sm-6">
+                        <button class="btn btn-danger" onclick="decrementItem(5)">Remove Items</button>
+                    </div>
+                </div>           
+        </div>
+            <div class="col-sm-2">
+            <img src="All_Images/Sumsang/Samsung_S8_Plus.jpg" alt="Samsung_S8_Plus" title="Samsung_S8_Plus" data-toggle="modal" data-target="#myModal" onclick="openModal(6)" />
+            <h4>Price Rs:80,300/-</h4>
+            <div style="position: relative;" class="row">
+                    <div style="position: absolute; left: 0%; " class="col-sm-6">
+                        <button class="btn btn-succes" onclick="incrementItem(6)">Add Items</button>
+                    </div>
+                    <div style="position: absolute; left:40% " class="col-sm-6">
+                        <button class="btn btn-danger" onclick="decrementItem(6)">Remove Items</button>
+                    </div>
+                </div>
+        </div>
+            <div class="col-sm-2">
+            <img src="All_Images/Sumsang/Samsung_Galaxy_S8.jpg" alt="Samsung Samsung Galaxy S8" title="Samsung Galaxy S8" data-toggle="modal" data-target="#myModal" onclick="openModal(7)" />
+            <h4>Price Rs:80,300/-</h4>
+            <div style="position: relative;" class="row">
+                    <div style="position:absolute;left: 0px"  class="col-sm-6">
+                        <button class="btn btn-succes" onclick="incrementItem(7)">Add Items</button>
+                    </div>
+                    <div style="position: relative;left: 40% " class="col-sm-6">
+                        <button class="btn btn-danger" onclick="decrementItem(7)">Remove Items</button>
+                    </div>
+                </div>
+        </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+</div>
+            
+<script src="app.js"></script>
+<script src="function.js"></script>
+<script src="samsung.js"></script>
+<script>
+   
+</script>
+        
+</body>
+</html>
